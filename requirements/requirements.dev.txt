@@ -1,0 +1,10 @@
+######## requirements.dev.txt ########
+# used locally to create python env for local tests
+
+###### Requirements with Version Specifiers ######
+#   See https://www.python.org/dev/peps/pep-0440/#version-specifiers 
+
+pylint == 2.4.4 # we are not running linter and tests in the container
+pytest == 5.4.1 # but the packages are here for local installation
+pika == 1.1
+flask == 1.1.1

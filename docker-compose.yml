@@ -1,0 +1,36 @@
+version: '3.5'
+#---------------------------------------------------
+networks:
+  vubble_backend:
+    #external: true #use external to access an existing network
+    driver: bridge
+#---------------------------------------------------
+#---------------------------------------------------
+services:
+  #-------------------------------------------------
+  rabbitmq:
+    image: rabbitmq:3.8.9-alpine #3.5.3-management
+    hostname: rabbitmq
+    container_name: rabbitmq
+    restart: unless-stopped
+    ports:
+      - 5673:5673
+      - 5672:5672
+      - 15672:15672
+    networks:
+      - vubble_backend
+  #------------------------------------------------
+  myapp:
+    container_name: myapp
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: unless-stopped
+    depends_on:
+      - rabbitmq
+    ports:
+      - "9000:8005" # use 127.0.0.1:9000:8005 to make visible only inside cluster
+    networks:
+      - vubble_backend
+  #-------------------------------------------------
+#---------------------------------------------------
