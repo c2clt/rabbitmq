@@ -3,7 +3,9 @@
 
 ### REQUIREMENTS ###
 
-These scripts were tested in Ubuntu 18.04 and Ubuntu 20.04 Computers
+- These scripts were tested in Ubuntu 18.04 and Ubuntu 20.04 Computers
+
+- Internet access for Docker and RabbitMQ download 
 
 
 ### DEPLOY APP - BASH SCRIPTS ###
