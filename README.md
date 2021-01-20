@@ -12,15 +12,14 @@
 
 The scripts were tested in Ubuntu 18.04 VM. 
 
-1 - Install docker  ```bash 1_installDocker.sh``` (At the script top change to your user name before running)
+- Install docker  ```bash 1_installDocker.sh``` (At the script top change to your user name before running)
 
-2 - Run containers ``` bash 2_runContainer.sh``` creates a RabbitMQ and a MyApp container
+- Run containers ``` bash 2_runContainer.sh``` creates a RabbitMQ and a MyApp container
+    The script above deploys a **Python** app alongside a **Rabbitmq** container. Test Python app route in *localhost:9000/test*
 
-This script above deploys a **Python** app alongside a **Rabbitmq** container. Test Python app route in *localhost:9000/test*
+- Delete the container and images created use script ```3_deleteContainer.sh```
 
-3 - Delete the container and images created use script ```3_deleteContainer.sh```
-
-4 - Erase everything and recover all disk space use script ```4_deleteEverything.sh``` (this will erase all images including the original Python)
+- Erase everything and recover all disk space use script ```4_deleteEverything.sh``` (this will erase all images including the original Python)
 
 
 ### TESTING THE APP ###
