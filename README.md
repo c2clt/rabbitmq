@@ -5,6 +5,7 @@
 
 These scripts were tested in Ubuntu 18.04 and Ubuntu 20.04 Computers
 
+
 ### DEPLOY APP - BASH SCRIPTS ###
 
 The scripts were tested in Ubuntu 18.04 VM. 
