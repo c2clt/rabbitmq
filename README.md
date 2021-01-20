@@ -16,7 +16,7 @@ The scripts were tested in Ubuntu 18.04 VM.
 
 2 - Run containers ``` bash 2_runContainer.sh``` creates a RabbitMQ and a MyApp container
 
-This script deploys a **Python** app alongside a **Rabbitmq** container. Test Python app route in *localhost:9000/test*
+This script above deploys a **Python** app alongside a **Rabbitmq** container. Test Python app route in *localhost:9000/test*
 
 3 - Delete the container and images created use script ```3_deleteContainer.sh```
 
