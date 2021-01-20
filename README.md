@@ -1,4 +1,4 @@
-# RabbitMQ Tutorial - with Docker, Python & Rabbitmq #
+# RabbitMQ Tutorial - with Docker, Python & RabbitMQ #
 
 
 ### REQUIREMENTS ###
