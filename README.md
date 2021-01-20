@@ -25,7 +25,7 @@ This script deploys a **Python** app alongside a **Rabbitmq** container. Test Py
 
 Check the running containers with the command ```docker ps```
 
-Check the logs of the myapp container with ```docker logs <containerid>``` (as containeer id it is possible to use the first 2 or 3 digits)
+Check the logs of the myapp container with ```docker logs <containerid>``` (as container id it is possible to use the first 2 or 3 digits)
 
 Use the route ```http://localhost:9000/write``` and ```http://localhost:9000/read``` to post/retrieve from RabbitMQ
 
