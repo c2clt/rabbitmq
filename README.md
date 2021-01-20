@@ -1,7 +1,11 @@
 # Docker Tutorial - Python & Rabbitmq #
 
 
-### DOCKER DEPLOYMENT ###
+### REQUIREMENTS ###
+
+These scripts were tested in a Ubuntu 18.04 VM
+
+### DEPLOY APP - BASH SCRIPTS ###
 
 The scripts were tested in Ubuntu 18.04 VM. 
 
