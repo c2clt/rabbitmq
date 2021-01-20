@@ -3,21 +3,21 @@
 
 ### REQUIREMENTS ###
 
-These scripts were tested in a Ubuntu 18.04 VM
+These scripts were tested in Ubuntu 18.04 and Ubuntu 20.04 Computers
 
 ### DEPLOY APP - BASH SCRIPTS ###
 
 The scripts were tested in Ubuntu 18.04 VM. 
 
-Install docker  ```bash 1_installDocker.sh```
+1 - Install docker  ```bash 1_installDocker.sh``` (At the script top change to your user name before running)
 
-Run containers ``` bash 2_runContainer.sh``` creates a RabbitMQ and a MyApp container
+2 - Run containers ``` bash 2_runContainer.sh``` creates a RabbitMQ and a MyApp container
 
 This script deploys a **Python** app alongside a **Rabbitmq** container. Test Python app route in *localhost:9000/test*
 
-Delete the container and images created use script ```3_deleteContainer.sh```
+3 - Delete the container and images created use script ```3_deleteContainer.sh```
 
-Erase everything and recover all disk space use script ```4_deleteEverything.sh``` (this will erase all images including the original Python)
+4 - Erase everything and recover all disk space use script ```4_deleteEverything.sh``` (this will erase all images including the original Python)
 
 
 ### TESTING THE APP ###
